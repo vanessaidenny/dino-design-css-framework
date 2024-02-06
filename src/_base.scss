@@ -1,2 +1,12 @@
 @use 'variables';
 @use 'typography';
+
+
+body {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
