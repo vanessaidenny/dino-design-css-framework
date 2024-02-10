@@ -1,2 +1,22 @@
 @use 'variables';
 @use 'typography';
+
+body {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+th, td {
+    border: 1px solid variables.$table-border-color; // Note the namespace
+    text-align: left;
+    padding: 8px;
+}
+  
+th {
+    background-color: variables.$table-header-bg; // Access using namespace
+    color: variables.$table-header-color; // Access using namespace
+}
