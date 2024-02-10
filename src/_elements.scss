@@ -1,0 +1,27 @@
+@use "variables";
+
+// Buttone styles
+@mixin btn($bgcolor: variables.$default-color, $text-color: variable.$default-text-color) {
+    background-color: $bgcolor;
+    color: $text-color;
+    padding: variables.$p-sm;
+    border-radius: 5px;
+    min-height: 30px;
+    min-width: 120px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@mixin btn-outline($text-color: variable.$default-text-color) {
+    // color: $text-color;
+    // padding: variables.$p-sm;
+    // border-radius: 5px;
+    // min-height: 30px;
+    // min-width: 120px;
+    // line-height: 30px;
+    // text-decoration: none;
+    // text-align: center;
+    border-width: 1px;
+    border-color: $text-color;
+}

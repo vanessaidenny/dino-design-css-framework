@@ -1,2 +1,21 @@
 @use 'variables';
 @use 'typography';
+@use "elements";
+
+// Button
+// default button
+.btn {
+    @include elements.btn;
+}
+
+// outline button
+.btn-outline {
+    @include elements.btn;
+    @include elements.btn-outline
+}
+
+// light
+// .btn-light {
+//     @include elements.btn($bgcolor: variables.$light-color, $text-color: variable.$dark-text-color);
+// }
+// dark
