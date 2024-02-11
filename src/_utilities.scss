@@ -1,2 +1,256 @@
 @use 'variables';
 @use 'typography';
+
+// Margin
+.m-0 {
+    margin: variables.$m-0;
+}
+
+.m-sm {
+    margin: variables.$m-sm;
+}
+
+.m-md {
+    margin: variables.$m-md;
+}
+
+.m-lg {
+    margin: variables.$m-lg;
+}
+
+// Margin-top
+.mt-0 {
+    margin-top: variables.$mt-0;
+}
+
+.mt-sm {
+    margin-top: variables.$mt-sm;
+}
+
+.mt-md {
+    margin-top: variables.$mt-md;
+}
+
+.mt-lg {
+    margin-top: variables.$mt-lg;
+}
+
+// Margin-bottom
+.mb-0 {
+    margin-bottom: variables.$mb-0;
+}
+
+.mb-sm {
+    margin-bottom: variables.$mb-sm;
+}
+
+.mb-md {
+    margin-bottom: variables.$mb-md;
+}
+
+.mb-lg {
+    margin-bottom: variables.$mb-lg;
+}
+
+// Margin-left
+.ms-0 {
+    margin-left: variables.$ms-0;
+}
+
+.ms-sm {
+    margin-left: variables.$ms-sm;
+}
+
+.ms-md {
+    margin-left: variables.$ms-md;
+}
+
+.ms-lg {
+    margin-left: variables.$ms-lg;
+}
+
+// Margin-right
+.me-0 {
+    margin-right: variables.$me-0;
+}
+
+.me-sm {
+    margin-right: variables.$me-sm;
+}
+
+.me-md {
+    margin-right: variables.$me-md;
+}
+
+.me-lg {
+    margin-right: variables.$me-lg;
+}
+
+// Margin left & right
+.mx-0 {
+    margin-left: variables.$ms-0;
+    margin-right: variables.$ms-0;
+}
+
+.mx-sm {
+    margin-left: variables.$ms-sm;
+    margin-right: variables.$ms-sm;
+}
+
+.mx-md {
+    margin-left: variables.$ms-md;
+    margin-right: variables.$ms-md;
+}
+
+.mx-lg {
+    margin-left: variables.$ms-lg;
+    margin-right: variables.$ms-lg;
+}
+
+// Margin top & bottom
+.my-0 {
+    margin-top: variables.$ms-0;
+    margin-bottom: variables.$ms-0;
+}
+
+.my-sm {
+    margin-top: variables.$ms-sm;
+    margin-bottom: variables.$ms-sm;
+}
+
+.my-md {
+    margin-top: variables.$ms-md;
+    margin-bottom: variables.$ms-md;
+}
+
+.my-lg {
+    margin-top: variables.$ms-lg;
+    margin-bottom: variables.$ms-lg;
+}
+
+// Padding
+.p-0 {
+    padding: variables.$p-0;
+}
+
+.p-sm {
+    padding: variables.$p-sm;
+}
+
+.p-md {
+    padding: variables.$p-md;
+}
+
+.p-lg {
+    padding: variables.$p-lg;
+}
+
+// Padding-top
+.pt-0 {
+    padding-top: variables.$pt-0;
+}
+
+.pt-sm {
+    padding-top: variables.$pt-sm;
+}
+
+.pt-md {
+    padding-top: variables.$pt-md;
+}
+
+.pt-lg {
+    padding-top: variables.$pt-lg;
+}
+
+// Padding-bottom
+.pb-0 {
+    padding-bottom: variables.$pb-0;
+}
+
+.pb-sm {
+    padding-bottom: variables.$pb-sm;
+}
+
+.pb-md {
+    padding-bottom: variables.$pb-md;
+}
+
+.pb-lg {
+    padding-bottom: variables.$pb-lg;
+}
+
+// Padding-left
+.ps-0 {
+    padding-left: variables.$ps-0;
+}
+
+.ps-sm {
+    padding-left: variables.$ps-sm;
+}
+
+.ps-md {
+    padding-left: variables.$ps-md;
+}
+
+.ps-lg {
+    padding-left: variables.$ps-lg;
+}
+
+// Padding-right
+.pe-0 {
+    padding-right: variables.$pe-0;
+}
+
+.pe-sm {
+    padding-right: variables.$pe-sm;
+}
+
+.pe-md {
+    padding-right: variables.$pe-md;
+}
+
+.pe-lg {
+    padding-right: variables.$pe-lg;
+}
+
+// Pagging left & right
+.px-0 {
+    padding-left: variables.$ps-0;
+    padding-right: variables.$ps-0;
+}
+
+.px-sm {
+    padding-left: variables.$ps-sm;
+    padding-right: variables.$ps-sm;
+}
+
+.px-md {
+    padding-left: variables.$ps-md;
+    padding-right: variables.$ps-md;
+}
+
+.px-lg {
+    padding-left: variables.$ps-lg;
+    padding-right: variables.$ps-lg;
+}
+
+// padding top & bottom
+.py-0 {
+    padding-top: variables.$ps-0;
+    padding-bottom: variables.$ps-0;
+}
+
+.py-sm {
+    padding-top: variables.$ps-sm;
+    padding-bottom: variables.$ps-sm;
+}
+
+.py-md {
+    padding-top: variables.$ps-md;
+    padding-bottom: variables.$ps-md;
+}
+
+.py-lg {
+    padding-top: variables.$ps-lg;
+    padding-bottom: variables.$ps-lg;
+}

@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'typography';
+@use "elements";
 
 body {
     line-height: 1.6;
@@ -20,3 +21,21 @@ th {
     background-color: variables.$table-header-bg; // Access using namespace
     color: variables.$table-header-color; // Access using namespace
 }
+
+// Button
+// default button
+.btn {
+    @include elements.btn;
+}
+
+// outline button
+.btn-outline {
+    @include elements.btn;
+    @include elements.btn-outline
+}
+
+// light
+// .btn-light {
+//     @include elements.btn($bgcolor: variables.$light-color, $text-color: variable.$dark-text-color);
+// }
+// dark
