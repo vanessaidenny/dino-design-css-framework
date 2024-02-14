@@ -34,8 +34,42 @@ th {
     @include elements.btn-outline
 }
 
-// light
-// .btn-light {
-//     @include elements.btn($bgcolor: variables.$light-color, $text-color: variable.$dark-text-color);
-// }
+//light
+.btn-light {
+    @include elements.btn($bgcolor: variables.$light, $text-color: variables.$dark);
+}
 // dark
+.btn-dark {
+    @include elements.btn($bgcolor: variables.$dark, $text-color: variables.$white);
+}
+
+//Container styles
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
