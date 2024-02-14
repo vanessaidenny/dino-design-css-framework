@@ -254,3 +254,80 @@
     padding-top: variables.$ps-lg;
     padding-bottom: variables.$ps-lg;
 }
+
+// Text color utility classes
+ .text-primary {
+    color: variables.$primary;
+  }
+  
+  .text-secondary {
+    color: variables.$secondary;
+  }
+  
+  .text-success {
+    color: variables.$success;
+  }
+  
+  .text-info {
+    color: variables.$info;
+  }
+  
+  .text-warning {
+    color: variables.$warning;
+  }
+  
+  .text-danger {
+    color: variables.$danger;
+  }
+  
+  .text-light {
+    color: variables.$light;
+  }
+  
+  .text-dark {
+    color: variables.$dark;
+  }
+
+  .text-white{
+    color: variables.$white;
+  }
+  
+  // Background color utility classes
+  .bg-primary {
+    background-color: variables.$primary;
+    color: variables.$white;
+  }
+  
+  .bg-secondary {
+    background-color: variables.$secondary;
+    color: variables.$white;
+  }
+  
+  .bg-success {
+    background-color: variables.$success;
+    color: variables.$white;
+  }
+  
+  .bg-info {
+    background-color: variables.$info;
+    color: variables.$white;
+  }
+  
+  .bg-warning {
+    background-color: variables.$warning;
+    color: variables.$white;
+  }
+  
+  .bg-danger {
+    background-color: variables.$danger;
+    color: variables.$white;
+  }
+  
+  .bg-light {
+    background-color: variables.$light;
+  }
+  
+  .bg-dark {
+    background-color: variables.$dark;
+    color: variables.$white;
+  }
