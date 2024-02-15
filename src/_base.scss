@@ -73,3 +73,65 @@ th {
       max-width: 1140px;
     }
   }
+
+  //Grid Styles
+  // Grid container
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: variables.$p-lg;
+    justify-content: space-around;
+  }
+  
+  // Grid item
+  .grid-item {
+    background-color: variables.$light;
+    padding: variables.$p-lg;
+    border: 1px solid variables.$primary;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  // Responsive grid columns
+  @for $i from 1 through 6 {
+    .grid-col-#{$i} {
+      grid-column: span $i;
+    }
+  }
+  
+  //List styles
+  
+  ul, ol {
+    margin-bottom: variables.$mb-md;
+    padding-left: variables.$ps-lg; 
+    list-style-type: circle; 
+  }
+  
+  ol {
+    list-style-type: decimal; 
+  }
+  
+  li {
+    margin-bottom: variables.$mb-sm; 
+  }
+
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: variables.$ps-0;
+    margin-bottom: variables.$mb-0;
+  }
+  
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: variables.$p-md;
+    margin-bottom: variables.$mb-0;
+    background-color: variables.$white;
+    border: 1px solid variables.$dark;
+  }
+  
+  .list-group-item:last-child {
+    margin-bottom: variables.$mb-0;
+  }
+  
