@@ -40,8 +40,13 @@ h4 {
   font-weight: typography.$fw-medium;
 }
 
-p{
+p {
     margin-bottom: variables.$mb-md;
+}
+
+small {
+  font-size: typography.$fs-sm;
+  font-weight: typography.$fw-regular;
 }
 
 table {
