@@ -6,6 +6,11 @@ body {
     line-height: 1.6;
 }
 
+section {
+  margin-bottom: variables.$mb-lg;
+}
+
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -31,7 +36,7 @@ th {
 // outline button
 .btn-outline {
     @include elements.btn;
-    @include elements.btn-outline
+    @include elements.btn-outline;
 }
 
 //light
@@ -104,7 +109,7 @@ th {
   ul, ol {
     margin-bottom: variables.$mb-md;
     padding-left: variables.$ps-lg; 
-    list-style-type: circle; 
+    list-style-type: circle;
   }
   
   ol {
