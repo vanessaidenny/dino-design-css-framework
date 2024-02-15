@@ -331,3 +331,47 @@
     background-color: variables.$dark;
     color: variables.$white;
   }
+
+  
+// Font
+// Font Sizes
+.fs-sm {
+    font-size: typography.$fs-sm;
+}
+
+.fs-md {
+    font-size: typography.$fs-md;
+}
+
+.fs-lg {
+    font-size: typography.$fs-lg;
+}
+
+.fs-xl {
+    font-size: typography.$fs-xl;
+}
+
+.fs-xxl {
+    font-size: typography.$fs-xxl;
+}
+
+// Font Weights
+.fw-light {
+    font-weight: typography.$fw-light;
+}
+
+.fw-regular {
+    font-weight: typography.$fw-regular;
+}
+
+.fw-medium {
+    font-weight: typography.$fw-medium;
+}
+
+.fw-semibold {
+    font-weight: typography.$fw-semibold;
+}
+
+.fw-bold {
+    font-weight: typography.$fw-bold;
+}
