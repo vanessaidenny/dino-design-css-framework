@@ -38,6 +38,11 @@ h4 {
   font-weight: typography.$fw-medium;
 }
 
+small {
+  font-size: typography.$fs-sm;
+  font-weight: typography.$fw-regular;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
