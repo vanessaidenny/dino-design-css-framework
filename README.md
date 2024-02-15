@@ -34,12 +34,58 @@ Once downloaded, integrate Dino Design into your project by adding the following
 ## 📝 Usage Guide - Utilities
 <a name="usage-utilities"></a>
 
+### 1. Font Family
+For the Dino Design brand, we utilize the sans-serif font Fredoka, accessible via [Google fonts](https://fonts.google.com/specimen/Fredoka).
+
+Incorporate the `$font-stack` variable into your stylesheet in the class or tag you desire, as illustrated below in the body tag:
+
+
+```scss
+body {
+    font-family: variables.$font-stack;
+}
+```
+
 <br />
 
-### 1. Font Family
-
-
 ### 2. Typography
+The typography is defined in the `_typography.scss` file as outlined below.
+
+> **Font Weight Variables:** These variables allow you to control the thickness of the text, providing flexibility in conveying hierarchy and emphasis.
+```scss
+$fs-sm: 0.8rem; // Small font size
+$fs-md: 1rem; // Medium font size
+$fs-lg: 1.5rem; // Large font size
+$fs-xl: 2rem; // Extra-large font size
+$fs-xxl: 2.5rem; // Extra-extra-large font size
+```
+
+> **Font Size Variables:** These variables enable you to set consistent and responsive text dimensions throughout your project.
+
+```scss
+$fw-light: 300; // Light font weight
+$fw-regular: 400; // Regular font weight
+$fw-medium: 500; // Medium font weight
+$fw-semibold: 600; // Semibold font weight
+$fw-bold: 700; // Bold font weight
+```
+
+Incorporate the font sizes and weights variables:
+- into your stylesheet
+
+```scss
+ /* Utilize the 'typography' prefix for accessing values defined in the corresponding file */
+body {
+    font-size: typography.$fs-md;
+    font-weight: typography.$fw-regular;
+}
+```
+
+- directly within a tag in your `index.html` file using the class attribute
+
+```html
+<h1 class="fs-md fw-regular"><h1>
+```
 
 <br />
 
