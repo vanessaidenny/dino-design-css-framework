@@ -1,6 +1,7 @@
 @use "variables";
+@use "typography";
 
-// Buttone styles
+// Button styles
 @mixin btn($bgcolor: variables.$default-color, $text-color: variables.$white) {
     background-color: $bgcolor;
     color: $text-color;
@@ -12,6 +13,8 @@
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    font-size: typography.$fs-md;
+    font-weight: typography.$fw-medium;
 }
 
 @mixin btn-outline($text-color: variables.$default-text-color, $bgcolor: variables.$white) {
@@ -26,4 +29,6 @@
     background-color: $bgcolor;
     border-width: 1px;
     border: 1px solid $text-color;
+    font-size: typography.$fs-md;
+    font-weight: typography.$fw-medium;
 }

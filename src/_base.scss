@@ -3,6 +3,10 @@
 @use "elements";
 
 body {
+    color: variables.$default-text-color;
+    font-family: variables.$font-stack;
+    font-size: typography.$fs-md;
+    font-weight: typography.$fw-regular;
     line-height: 1.6;
 }
 
@@ -10,6 +14,29 @@ section {
   margin-bottom: variables.$mb-lg;
 }
 
+h1 {
+  color: variables.$primary;
+  font-size: typography.$fs-xxl;
+  font-weight: typography.$fw-bold;
+}
+
+h2 {
+  color: variables.$secondary;
+  font-size: typography.$fs-xl;
+  font-weight: typography.$fw-semibold;
+}
+
+h3 {
+  color: variables.$secondary;
+  font-size: typography.$fs-lg;
+  font-weight: typography.$fw-semibold;
+}
+
+h4 {
+  color: variables.$secondary;
+  font-size: typography.$fs-lg;
+  font-weight: typography.$fw-medium;
+}
 
 table {
     width: 100%;
@@ -20,11 +47,15 @@ th, td {
     border: 1px solid variables.$table-border-color; // Note the namespace
     text-align: left;
     padding: 8px;
+    font-size: typography.$fs-md;
+    font-weight: typography.$fw-light;
 }
   
 th {
     background-color: variables.$table-header-bg; // Access using namespace
     color: variables.$table-header-color; // Access using namespace
+    font-size: typography.$fs-md;
+    font-weight: typography.$fw-medium;
 }
 
 // Button
