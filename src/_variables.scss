@@ -9,9 +9,20 @@ $font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size: 16px;
 
 // set by Jessie
+//Colors
+$primary: #009a2e;
+$secondary: #c57000;
+$success: #00ad7c;
+$info: #568a92;
+$warning: #a28700;
+$danger: #db2235;
+$light: #cbcbcb;
+$dark: #333b35;
+$white: #fff;
+$black: #000;
 // default color
-$default-color: #00ceed;
-$default-text-color: #333;
+$default-color: $primary;
+$default-text-color: $dark;
 
 // Margin
 $m-0: 0 !important;
