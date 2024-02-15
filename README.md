@@ -1,23 +1,53 @@
-# Dino Design CSS Framework
-<!-- Description -->
+# 🦖 Dino Design CSS Framework 🦕
+*Elevate your project's visual aesthetics by easy integrating with Dino Design, an open-source CSS framework.*
 
+<br />
 
-## Get Started
+### Table of Contents
 
-To include Dino Design in your project, add the following link to the `<head>` of your HTML document:
+- [Get Started with Dino Design](#get-started)
+- [Usage Guide - Utilities](#usage-utilities)
+- [Usage Guide - Elements](#usage-elements)
+- [Customization](#customization)
+
+<br />
+
+## 🚀 Get Started with Dino Design
+<a name="get-started"></a>
+
+### Step 1: Download the Stylesheet
+[Download the main.css](css/main.css) to kickstart your project's aesthetic appeal.
+
+### Step 2: Include in Your Project
+Once downloaded, integrate Dino Design into your project by adding the following link to the `<head>` of your HTML document:
 
 ```html
 <link rel="stylesheet" href="css/main.css">
 ```
-Adjust the `href` path to fit your project structure.
+💡 Make sure to adjust the href path according to your project structure.
 
-### Usage - Utilities
 
-#### Font
+*Now, you're ready to elevate your project's visual aesthetics!*
 
-#### Colors
+<br />
 
-#### Margin & Padding
+## 📝 Usage Guide - Utilities
+<a name="usage-utilities"></a>
+
+<br />
+
+### 1. Font Family
+
+
+### 2. Typography
+
+<br />
+
+### 3. Colors
+
+<br />
+
+### 4. Margin & Padding
 *(Notation)*
 <br />
 Property is one of:
@@ -42,7 +72,7 @@ Size is one of:
 (You can change sizes by amending entries to the $variables Sass map variable.)
 
 > Examples
-```
+```scss
 .m-0 {
     margin: variables.$m-0;
 }
@@ -56,36 +86,42 @@ Size is one of:
 }
 ```
 
+<br />
 
-#### Borders
+### 5. Borders
 Borders are easily customized through variables.scss. <br>Edit the following variables to match your design preferences:
 
 under variables.scss  
-```
+```scss
 $table-border-color: #cccccc; 
 ```
 Change this to customize border color,<br>
 After adjustments, recompile Sass to update main.css with your new settings.
 
-### Usage - Elements
+<br />
 
-#### Buttons
+## 📝 Usage Guide - Elements
+<a name="usage-elements"></a>
+
+### 1. Buttons
 *(temporary notes)*
 <br />
 Dino has a base `.btn` class that sets up basic styles such as size and padding. By default, `.btn` controls have a transparent border and primary background color, without any effects such as hover effect.
 <br />
 Button variants includes outline, light and dark.
 
-```
+```html
 <button type="button" class="btn btn-outline">Outline</button>
 <button type="button" class="btn btn-light">Light</button>
 <button type="button" class="btn btn-dark">Dark</button>
 ```
 
-#### Tables
+<br />
+
+### 2. Tables
 To apply custom styling to tables, ensuring clarity and visual appeal, use the class mt-1 for a standardized look:
 
-````
+```html
 <table class="mt-1">
     <tr>
         <th>Name</th>
@@ -103,11 +139,17 @@ To apply custom styling to tables, ensuring clarity and visual appeal, use the c
         <td>32</td>
     </tr>
 </table>
-````
+```
 
-#### List
+<br />
 
-#### Form & Input
+### 3. List
 
+<br />
 
-### Customization
+### 4. Form & Input
+
+<br />
+
+## 🎨 Customization
+<a name="customization"></a>
