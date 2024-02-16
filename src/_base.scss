@@ -8,6 +8,8 @@ body {
     font-size: typography.$fs-md;
     font-weight: typography.$fw-regular;
     line-height: 1.6;
+    margin-left: variables.$ms-md;
+    margin-right: variables.$me-md;
 }
 
 section {
@@ -36,6 +38,10 @@ h4 {
   color: variables.$secondary;
   font-size: typography.$fs-lg;
   font-weight: typography.$fw-medium;
+}
+
+p{
+    margin-bottom: variables.$mb-md;
 }
 
 table {
@@ -88,25 +94,25 @@ th {
   
   @media (min-width: 576px) {
     .container {
-      max-width: 540px;
+      max-width: variables.$max-width-sm;
     }
   }
   
   @media (min-width: 768px) {
     .container {
-      max-width: 720px;
+      max-width: variables.$max-width-md;
     }
   }
   
   @media (min-width: 992px) {
     .container {
-      max-width: 960px;
+      max-width: variables.$max-width-lg;
     }
   }
   
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px;
+      max-width: variables.$max-width-xl;
     }
   }
 
