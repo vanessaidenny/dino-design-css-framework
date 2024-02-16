@@ -32,3 +32,8 @@
     font-size: typography.$fs-md;
     font-weight: typography.$fw-medium;
 }
+
+@mixin table-style {
+    width: 100%;
+    border-collapse: collapse;
+}
