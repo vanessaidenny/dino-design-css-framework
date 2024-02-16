@@ -10,6 +10,8 @@
   - [🚀 Get Started with Dino Design ](#-get-started-with-dino-design-)
     - [Step 1: Download the Stylesheet ](#step-1-download-the-stylesheet-)
     - [Step 2: Include in Your Project ](#step-2-include-in-your-project-)
+    - [Step 3: Install Sass ](#step-3-install-sass-)
+    - [Step 4: Compile Sass to Apply Changes ](#step-4-compile-sass-to-apply-changes-)
   - [📝 Usage Guide - Utilities ](#-usage-guide---utilities-)
     - [1. Font Family ](#1-font-family-)
     - [2. Typography ](#2-typography-)
@@ -21,7 +23,6 @@
     - [2. Tables ](#2-tables-)
     - [3. List ](#3-list-)
     - [4. Form \& Input ](#4-form--input-)
-  - [🎨 Customization ](#-customization-)
 
 <br />
 
@@ -38,6 +39,21 @@ Once downloaded, integrate Dino Design into your project by adding the following
 ```
 💡 Make sure to adjust the href path according to your project structure.
 
+### Step 3: Install Sass <a name="step-3-install-sass-"></a>
+If you use Node.js, you can install Sass using npm by running the command below:
+
+```npm install -g sass```
+
+Find more information in the [Sass documentation](https://sass-lang.com/install/).
+
+### Step 4: Compile Sass to Apply Changes <a name="step-4-compile-sass-to-apply-changes-"></a>
+As you make adjustments in the Sass files, compile Sass to update the `main.css` file with your new settings. Use the following terminal command:
+
+```sass --watch src/dino.sass css/main.css```
+
+This command will continuously watch for changes in your Sass files and automatically update the `main.css` file. Ensure your terminal is positioned in the project directory before executing this command.
+
+<br>
 
 *Now, you're ready to elevate your project's visual aesthetics!*
 
@@ -146,14 +162,35 @@ Size is one of:
 <br />
 
 ### 5. Borders <a name="5-borders-"></a>
-Borders are easily customized through variables.scss. <br>Edit the following variables to match your design preferences:
+Borders colors are easily customized through `variables.scss`. <br>
+Edit the following variables to match your design preferences:
 
-under variables.scss  
+> Under `variables.scss`:
 ```scss
-$table-border-color: #cccccc; 
+$table-border-color: #cccccc; // Table border color
+$border-collapse: collapse; // Collapse border
+$border-dark: 1px solid $dark; // Border dark color
+$border-light: 1px solid $light; // Border light color
+$radius-4: 4px; // Border radius 4px
+$radius-5: 5px; // Border radius 5px
 ```
-Change this to customize border color,<br>
 After adjustments, recompile Sass to update main.css with your new settings.
+
+Incorporate the border variables variables:
+- into your `css` stylesheet
+
+```scss
+ /* Utilize the 'variables' prefix for accessing values defined in the corresponding file */
+table {
+    border: variables.$border-light;
+}
+```
+
+- directly within a tag in your `html` file using the class attribute
+
+```html
+<table class="border-light"><table>
+```
 
 <br />
 
@@ -175,7 +212,7 @@ Button variants includes outline, light and dark.
 <br />
 
 ### 2. Tables <a name="2-tables-"></a>
-To apply custom styling to tables, ensuring clarity and visual appeal, use the class mt-1 for a standardized look:
+💡 To apply custom styling to tables, ensuring clarity and visual appeal, use the class mt-1 for a standardized look:
 
 ```html
 <table class="mt-1">
@@ -204,8 +241,20 @@ To apply custom styling to tables, ensuring clarity and visual appeal, use the c
 <br />
 
 ### 4. Form & Input <a name="4-form--input-"></a>
+The form and input can be added and customized through background color, font color and width, as illustrated below:
 
+- **Form:**
+```scss
+    // Default values defined in properties
+    form {
+      @include elements.form($text-color: variables.$default-text-color, $bgColor: variables.$white, $width: 100%);
+    }
+```
 
-<br />
-
-## 🎨 Customization <a name="-customization-"></a>
+- **Input:**
+```scss
+    // Default values defined in properties
+    input {
+        @include input($text-color: variables.$default-text-color, $bgColor: variables.$white);
+    }
+```
