@@ -63,6 +63,19 @@ th {
     font-weight: typography.$fw-medium;
 }
 
+
+// Form
+form {
+  @include elements.form($bgColor: variables.$light, $text-color: variables.$dark);
+}
+
+  // Form desktop breakpoint
+  @media (min-width: 1200px) {
+    form {
+      @include elements.form($bgColor: variables.$light, $text-color: variables.$dark, $width: 50%);
+    }
+  }
+
 // Button
 // default button
 .btn {
@@ -77,11 +90,11 @@ th {
 
 //light
 .btn-light {
-    @include elements.btn($bgcolor: variables.$light, $text-color: variables.$dark);
+    @include elements.btn($bgColor: variables.$light, $text-color: variables.$dark);
 }
 // dark
 .btn-dark {
-    @include elements.btn($bgcolor: variables.$dark, $text-color: variables.$white);
+    @include elements.btn($bgColor: variables.$dark, $text-color: variables.$white);
 }
 
 //Container styles

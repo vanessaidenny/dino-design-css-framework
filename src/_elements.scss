@@ -2,8 +2,8 @@
 @use "typography";
 
 // Button styles
-@mixin btn($bgcolor: variables.$default-color, $text-color: variables.$white) {
-    background-color: $bgcolor;
+@mixin btn($bgColor: variables.$default-color, $text-color: variables.$white) {
+    background-color: $bgColor;
     color: $text-color;
     padding: variables.$p-sm;
     border-radius: 5px;
@@ -17,7 +17,7 @@
     font-weight: typography.$fw-medium;
 }
 
-@mixin btn-outline($text-color: variables.$default-text-color, $bgcolor: variables.$white) {
+@mixin btn-outline($text-color: variables.$default-text-color, $bgColor: variables.$white) {
     color: $text-color;
     // padding: variables.$p-sm;
     // border-radius: 5px;
@@ -26,9 +26,40 @@
     // line-height: 30px;
     // text-decoration: none;
     // text-align: center;
-    background-color: $bgcolor;
+    background-color: $bgColor;
     border-width: 1px;
     border: 1px solid $text-color;
     font-size: typography.$fs-md;
     font-weight: typography.$fw-medium;
+}
+
+
+// Form styles
+@mixin form($text-color: variables.$default-text-color, $bgColor: variables.$white, $width: 100%) {
+    border-radius: 5px;
+    background-color: $bgColor;
+    color: $text-color;
+    padding: variables.$p-lg;
+    max-width: $width;
+
+    input {
+        @include input();
+    }
+}
+
+// Input styles
+@mixin input($text-color: variables.$default-text-color, $bgColor: variables.$white) {
+    color: $text-color;
+    background-color: $bgColor;
+    border-radius: 5px;
+    border: 1px solid variables.$table-border-color;
+    padding-left: variables.$ps-md;
+    padding-top: variables.$pt-sm;
+    padding-bottom: variables.$pb-sm;
+    width: 100%;
+    
+    &::placeholder {
+      font-size: typography.$fs-sm;
+      font-weight: typography.$fw-light;
+    }
 }
