@@ -47,6 +47,7 @@ small {
   font-weight: typography.$fw-regular;
 }
 
+// Table
 table {
   @include elements.table-style;
     // width: 100%;
@@ -68,18 +69,17 @@ th {
     font-weight: typography.$fw-medium;
 }
 
-
 // Form
 form {
   @include elements.form($bgColor: variables.$light, $text-color: variables.$dark);
 }
 
-  // Form desktop breakpoint
-  @media (min-width: 1200px) {
-    form {
-      @include elements.form($bgColor: variables.$light, $text-color: variables.$dark, $width: 50%);
-    }
+// Form desktop breakpoint
+@media (min-width: 1200px) {
+  form {
+    @include elements.form($bgColor: variables.$light, $text-color: variables.$dark, $width: 50%);
   }
+}
 
 // Button
 // default button
@@ -93,14 +93,14 @@ form {
     @include elements.btn-outline;
 }
 
-//light
+//light button
 .btn-light {
     @include elements.btn($bgColor: variables.$light, $text-color: variables.$dark);
     &:hover {
         background-color: darken(variables.$light, 10%);
     }
 }
-// dark
+// dark button
 .btn-dark {
     @include elements.btn($bgColor: variables.$dark, $text-color: variables.$white);
     &:hover {

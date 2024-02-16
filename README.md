@@ -233,8 +233,6 @@ table {
 ## 📝 Usage Guide - Elements <a name="-usage-guide---elements-"></a>
 
 ### 1. Buttons <a name="1-buttons-"></a>
-*(temporary notes)*
-<br />
 Dino has a base `.btn` class that sets up basic styles such as size and padding. By default, `.btn` controls have a transparent border and primary background color, with hover effects.
 <br />
 Button variants includes outline, light and dark.

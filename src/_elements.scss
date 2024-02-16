@@ -23,13 +23,6 @@
 
 @mixin btn-outline($text-color: variables.$default-text-color, $bgColor: variables.$white) {
     color: $text-color;
-    // padding: variables.$p-sm;
-    // border-radius: 5px;
-    // min-height: 30px;
-    // min-width: 120px;
-    // line-height: 30px;
-    // text-decoration: none;
-    // text-align: center;
     background-color: $bgColor;
     border-width: 1px;
     border: 1px solid $text-color;
@@ -42,13 +35,11 @@
       }
 }
 
-
 // Table styles
 @mixin table-style {
     width: 100%;
     border-collapse: collapse;
 }
-
 
 // Form styles
 @mixin form($text-color: variables.$default-text-color, $bgColor: variables.$white, $width: 100%) {
