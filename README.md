@@ -210,7 +210,6 @@ $border-light: 1px solid $light; // Border light color
 $radius-4: 4px; // Border radius 4px
 $radius-5: 5px; // Border radius 5px
 ```
-After adjustments, recompile Sass to update main.css with your new settings.
 
 Incorporate the border variables variables:
 - into your `css` stylesheet
@@ -227,6 +226,10 @@ table {
 ```html
 <table class="border-light"><table>
 ```
+
+<br>
+
+After adjustments, recompile Sass to update main.css with your new settings.
 
 <br />
 
@@ -246,6 +249,43 @@ Button variants includes outline, light and dark.
 <br />
 
 ### 2. Tables <a name="2-tables-"></a>
+Tables are defined as bellow in the `_elements.scss` file.
+
+```scss
+@mixin table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        border: 1px solid variables.$table-border-color;
+        text-align: left;
+        padding: variables.$p-md;
+        font-size: typography.$fs-md;
+        font-weight: typography.$fw-light;
+    }
+    
+    th {
+        background-color: variables.$table-header-bg;
+        color: variables.$table-header-color;
+        font-size: typography.$fs-md;
+        font-weight: typography.$fw-medium;
+    }
+}
+```
+
+<br>
+
+Incorporate the border variables variables into your `css` stylesheet by applying in the table tag and customizing the header color and background as desired:
+
+```scss
+ /* Utilize the 'variables' prefix for accessing values defined in the corresponding file */
+table {
+  @include elements.table($header-color: variables.$table-header-color, $bgColor-header: variables.$table-header-bg);
+}
+```
+
+<br>
+
 💡 To apply custom styling to tables, ensuring clarity and visual appeal, use the class mt-1 for a standardized look:
 
 ```html

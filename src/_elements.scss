@@ -6,7 +6,7 @@
     background-color: $bgColor;
     color: $text-color;
     padding: variables.$p-sm;
-    border-radius: 5px;
+    border-radius: variables.$radius-5;
     min-height: 30px;
     min-width: 120px;
     line-height: 30px;
@@ -30,15 +30,30 @@
     font-weight: typography.$fw-medium;
     &:hover {
         background-color: lighten(variables.$light, 5%);
-        border: 1px solid variables.$primary;
+        border: variables.$border-primary;
         color: variables.$primary;
       }
 }
 
 // Table styles
-@mixin table-style {
+@mixin table($header-color: variables.$default-text-color, $bgColor-header: variables.$white) {
     width: 100%;
     border-collapse: collapse;
+
+    th, td {
+        border: variables.$border-table; // Note the namespace
+        text-align: left;
+        padding: variables.$p-md;
+        font-size: typography.$fs-md;
+        font-weight: typography.$fw-light;
+    }
+    
+    th {
+        background-color: $bgColor-header; // Access using namespace
+        color: $header-color; // Access using namespace
+        font-size: typography.$fs-md;
+        font-weight: typography.$fw-medium;
+    }
 }
 
 // Form styles
@@ -59,7 +74,7 @@
     color: $text-color;
     background-color: $bgColor;
     border-radius: variables.$radius-5;
-    border: 1px solid variables.$table-border-color;
+    border: variables.$border-table;
     padding-left: variables.$ps-md;
     padding-top: variables.$pt-sm;
     padding-bottom: variables.$pb-sm;
