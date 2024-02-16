@@ -1,5 +1,8 @@
 # 🦖 Dino Design CSS Framework 🦕  <a name="-dino-design-css-framework---"></a>
 *Elevate your project's visual aesthetics by easy integrating with Dino Design, an open-source CSS framework.*
+<br />
+
+Dino Design is a customizable CSS framework built with Sass. It provides a set of pre-styled components and utility classes to streamline the styling of your web projects.
 
 <br />
 
@@ -117,6 +120,39 @@ body {
 <br />
 
 ### 3. Colors <a name="3-colors-"></a>
+Dino Design offers a set of color variables that you can use to maintain consistency in your project's color scheme. Customize these variables in the `variables.scss` file based on your design preferences.
+
+```scss
+
+// Colors
+$primary: #009a2e;
+$secondary: #c57000;
+$success: #00ad7c;
+$info: #568a92;
+$warning: #a28700;
+$danger: #db2235;
+$light: #e6e6e6;
+$dark: #333b35;
+$white: #fff;
+$black: #000;
+// default color
+$default-color: $primary;
+$default-text-color: $dark;
+
+```
+You can use these colors in your stylesheet as follows:
+
+```scss
+body {
+    color: $default-text-color; // Set the text color
+    background-color: $white; // Set the background color
+}
+
+.btn{
+    background-color: $primary; // Use the primary color for buttons
+    color: $default-color; // Text color for buttons
+}
+```
 
 <br />
 
@@ -199,7 +235,7 @@ table {
 ### 1. Buttons <a name="1-buttons-"></a>
 *(temporary notes)*
 <br />
-Dino has a base `.btn` class that sets up basic styles such as size and padding. By default, `.btn` controls have a transparent border and primary background color, without any effects such as hover effect.
+Dino has a base `.btn` class that sets up basic styles such as size and padding. By default, `.btn` controls have a transparent border and primary background color, with hover effects.
 <br />
 Button variants includes outline, light and dark.
 
@@ -237,6 +273,43 @@ Button variants includes outline, light and dark.
 <br />
 
 ### 3. List <a name="3-list-"></a>
+Dino Design provides utility classes for list styling. The default list styles are clean and appealing. You can apply these styles directly to your HTML elements
+
+```html
+
+<ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+</ul>
+
+<ol>
+    <li>List item A</li>
+    <li>List item B</li>
+    <li>List item C</li>
+</ol>
+
+```
+
+The default styles for both unordered and ordered lists include margin, padding, and list-style-type. You can customize these styles according to your design:
+- Edit your `css` stylesheet as follows
+```scss
+/* Custom styles for unordered lists (<ul>) and ordered lists (<ol>) */
+
+ul, ol {
+  margin-bottom: variables.$mb-md;  // Adjust the bottom margin
+  padding-left: variables.$ps-lg;   // Adjust the left padding
+  list-style-type: circle;          // Change the list-style-type for unordered lists
+}
+
+ol {
+  list-style-type: decimal;  // Change the list-style-type for ordered lists
+}
+
+li {
+  margin-bottom: variables.$mb-sm;  // Adjust the bottom margin for list items
+}
+```
 
 <br />
 

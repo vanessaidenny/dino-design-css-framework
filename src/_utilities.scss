@@ -399,3 +399,11 @@
 .fw-bold {
     font-weight: typography.$fw-bold;
 }
+
+//Alignment
+.text-center{
+    text-align: variables.$text-center;
+}
+.text-right{
+    text-align: variables.$text-right;
+}

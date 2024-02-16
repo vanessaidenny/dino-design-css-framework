@@ -15,6 +15,10 @@
     cursor: pointer;
     font-size: typography.$fs-md;
     font-weight: typography.$fw-medium;
+    
+    &:hover {
+        background-color: darken(variables.$primary, 10%);
+      }
 }
 
 @mixin btn-outline($text-color: variables.$default-text-color, $bgColor: variables.$white) {
@@ -31,6 +35,11 @@
     border: 1px solid $text-color;
     font-size: typography.$fs-md;
     font-weight: typography.$fw-medium;
+    &:hover {
+        background-color: lighten(variables.$light, 5%);
+        border: 1px solid variables.$primary;
+        color: variables.$primary;
+      }
 }
 
 
@@ -43,7 +52,7 @@
 
 // Form styles
 @mixin form($text-color: variables.$default-text-color, $bgColor: variables.$white, $width: 100%) {
-    border-radius: 5px;
+    border-radius: variables.$radius-5;
     background-color: $bgColor;
     color: $text-color;
     padding: variables.$p-lg;
@@ -58,7 +67,7 @@
 @mixin input($text-color: variables.$default-text-color, $bgColor: variables.$white) {
     color: $text-color;
     background-color: $bgColor;
-    border-radius: 5px;
+    border-radius: variables.$radius-5;
     border: 1px solid variables.$table-border-color;
     padding-left: variables.$ps-md;
     padding-top: variables.$pt-sm;
