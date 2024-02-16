@@ -49,24 +49,7 @@ small {
 
 // Table
 table {
-  @include elements.table-style;
-    // width: 100%;
-    // border-collapse: collapse;
-}
-  
-th, td {
-    border: 1px solid variables.$table-border-color; // Note the namespace
-    text-align: left;
-    padding: 8px;
-    font-size: typography.$fs-md;
-    font-weight: typography.$fw-light;
-}
-  
-th {
-    background-color: variables.$table-header-bg; // Access using namespace
-    color: variables.$table-header-color; // Access using namespace
-    font-size: typography.$fs-md;
-    font-weight: typography.$fw-medium;
+  @include elements.table($header-color: variables.$table-header-color, $bgColor-header: variables.$table-header-bg);
 }
 
 // Form
@@ -152,8 +135,8 @@ form {
   .grid-item {
     background-color: variables.$light;
     padding: variables.$p-lg;
-    border: 1px solid variables.$primary;
-    border-radius: 4px;
+    border: variables.$border-primary;
+    border-radius: variables.$radius-4;
     text-align: center;
   }
   
@@ -193,7 +176,7 @@ form {
     padding: variables.$p-md;
     margin-bottom: variables.$mb-0;
     background-color: variables.$white;
-    border: 1px solid variables.$dark;
+    border: variables.$border-dark;
   }
   
   .list-group-item:last-child {
