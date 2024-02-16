@@ -331,3 +331,27 @@
     background-color: variables.$dark;
     color: variables.$white;
   }
+
+  // Borders
+
+// Border Collapse
+.border-collapse {
+    border-collapse: variables.$border-collapse;
+}
+
+// Border
+.border-dark {
+    border: variables.$border-dark;
+}
+
+.border-light {
+    border: variables.$border-light;
+}
+
+// Border Radius
+.radius-4 {
+    border-radius: variables.$radius-4;
+}
+.radius-5 {
+    border-radius: variables.$radius-5;
+}
