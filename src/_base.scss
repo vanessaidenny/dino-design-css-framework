@@ -8,8 +8,6 @@ body {
     font-size: typography.$fs-md;
     font-weight: typography.$fw-regular;
     line-height: 1.6;
-    margin-left: variables.$ms-md;
-    margin-right: variables.$me-md;
 }
 
 section {
@@ -98,15 +96,21 @@ form {
 //light
 .btn-light {
     @include elements.btn($bgColor: variables.$light, $text-color: variables.$dark);
+    &:hover {
+        background-color: darken(variables.$light, 10%);
+    }
 }
 // dark
 .btn-dark {
     @include elements.btn($bgColor: variables.$dark, $text-color: variables.$white);
+    &:hover {
+        background-color: darken(variables.$dark, 10%);
+    }
 }
 
 //Container styles
 .container {
-    width: 100%;
+    width: calc(100% - 40px);
     margin-right: auto;
     margin-left: auto;
   }
@@ -196,3 +200,20 @@ form {
     margin-bottom: variables.$mb-0;
   }
   
+  // Image styles
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  // Link styles
+  a {
+    color: variables.$primary;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+  
+    &:hover {
+      color: darken(variables.$primary, 10%);
+      text-decoration: none;
+    }
+  }

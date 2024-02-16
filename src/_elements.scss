@@ -15,6 +15,10 @@
     cursor: pointer;
     font-size: typography.$fs-md;
     font-weight: typography.$fw-medium;
+    
+    &:hover {
+        background-color: darken(variables.$primary, 10%);
+      }
 }
 
 @mixin btn-outline($text-color: variables.$default-text-color, $bgColor: variables.$white) {
@@ -31,6 +35,11 @@
     border: 1px solid $text-color;
     font-size: typography.$fs-md;
     font-weight: typography.$fw-medium;
+    &:hover {
+        background-color: lighten(variables.$light, 5%);
+        border: 1px solid variables.$primary;
+        color: variables.$primary;
+      }
 }
 
 
